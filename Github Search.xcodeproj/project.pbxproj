@@ -14,6 +14,7 @@
 		59B37FED26373F2000FD0ADC /* Github_Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59B37FEB26373F2000FD0ADC /* Github_Search.xcdatamodeld */; };
 		59B37FEF26373F2100FD0ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B37FEE26373F2100FD0ADC /* Assets.xcassets */; };
 		59B37FF226373F2100FD0ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B37FF026373F2100FD0ADC /* LaunchScreen.storyboard */; };
+		59B37FFB2637404A00FD0ADC /* jssource.js in Resources */ = {isa = PBXBuildFile; fileRef = 59B37FFA2637404A00FD0ADC /* jssource.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		59B37FEE26373F2100FD0ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59B37FF126373F2100FD0ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59B37FF326373F2100FD0ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B37FFA2637404A00FD0ADC /* jssource.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jssource.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				59B37FF026373F2100FD0ADC /* LaunchScreen.storyboard */,
 				59B37FF326373F2100FD0ADC /* Info.plist */,
 				59B37FEB26373F2000FD0ADC /* Github_Search.xcdatamodeld */,
+				59B37FFA2637404A00FD0ADC /* jssource.js */,
 			);
 			path = "Github Search";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B37FFB2637404A00FD0ADC /* jssource.js in Resources */,
 				59B37FF226373F2100FD0ADC /* LaunchScreen.storyboard in Resources */,
 				59B37FEF26373F2100FD0ADC /* Assets.xcassets in Resources */,
 				59B37FEA26373F2000FD0ADC /* Main.storyboard in Resources */,
