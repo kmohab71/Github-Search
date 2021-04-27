@@ -13,8 +13,9 @@ struct Repo: Decodable {
 struct RepoData: Decodable, Identifiable{
     var id : Int
     let name: String
-    let description: String
+    let description: String?
     let owner: Owner
+    let created_at: String
 }
 struct Owner: Decodable {
     let login : String

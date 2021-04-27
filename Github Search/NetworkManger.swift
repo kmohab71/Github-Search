@@ -10,7 +10,7 @@ class NetworkManger : ObservableObject{
     
     @Published var repos = [RepoData]()
     
-    func fetechDate( Query:String ){
+    func fetchDate( Query:String , onComplete: @escaping() -> Void){
         if let url = URL(string: "https://api.github.com/search/repositories?q="+Query) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
@@ -21,6 +21,8 @@ class NetworkManger : ObservableObject{
                             let results = try decoder.decode(Repo.self, from: safeData)
                             DispatchQueue.main.async {
                                 self.repos = results.items
+                                print(self.repos.count)
+                                onComplete()
                             }
                             
                         } catch  {

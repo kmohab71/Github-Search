@@ -16,6 +16,8 @@
 		59B37FF226373F2100FD0ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B37FF026373F2100FD0ADC /* LaunchScreen.storyboard */; };
 		59B3800326384C1600FD0ADC /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3800226384C1600FD0ADC /* Repo.swift */; };
 		59B3800626384DD800FD0ADC /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3800526384DD800FD0ADC /* NetworkManger.swift */; };
+		59B380232638552800FD0ADC /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B380212638552800FD0ADC /* RepoCell.swift */; };
+		59B380242638552800FD0ADC /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B380222638552800FD0ADC /* RepoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		59B37FF326373F2100FD0ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59B3800226384C1600FD0ADC /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		59B3800526384DD800FD0ADC /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		59B380212638552800FD0ADC /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		59B380222638552800FD0ADC /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				59B37FE826373F2000FD0ADC /* Main.storyboard */,
+				59B380212638552800FD0ADC /* RepoCell.swift */,
+				59B380222638552800FD0ADC /* RepoCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 				59B37FF226373F2100FD0ADC /* LaunchScreen.storyboard in Resources */,
 				59B37FEF26373F2100FD0ADC /* Assets.xcassets in Resources */,
 				59B37FEA26373F2000FD0ADC /* Main.storyboard in Resources */,
+				59B380242638552800FD0ADC /* RepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B3800626384DD800FD0ADC /* NetworkManger.swift in Sources */,
+				59B380232638552800FD0ADC /* RepoCell.swift in Sources */,
 				59B37FE726373F2000FD0ADC /* ViewController.swift in Sources */,
 				59B37FE326373F2000FD0ADC /* AppDelegate.swift in Sources */,
 				59B3800326384C1600FD0ADC /* Repo.swift in Sources */,
