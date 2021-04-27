@@ -14,7 +14,8 @@
 		59B37FED26373F2000FD0ADC /* Github_Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59B37FEB26373F2000FD0ADC /* Github_Search.xcdatamodeld */; };
 		59B37FEF26373F2100FD0ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B37FEE26373F2100FD0ADC /* Assets.xcassets */; };
 		59B37FF226373F2100FD0ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B37FF026373F2100FD0ADC /* LaunchScreen.storyboard */; };
-		59B37FFB2637404A00FD0ADC /* jssource.js in Resources */ = {isa = PBXBuildFile; fileRef = 59B37FFA2637404A00FD0ADC /* jssource.js */; };
+		59B3800326384C1600FD0ADC /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3800226384C1600FD0ADC /* Repo.swift */; };
+		59B3800626384DD800FD0ADC /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3800526384DD800FD0ADC /* NetworkManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		59B37FEE26373F2100FD0ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59B37FF126373F2100FD0ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59B37FF326373F2100FD0ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59B37FFA2637404A00FD0ADC /* jssource.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jssource.js; sourceTree = "<group>"; };
+		59B3800226384C1600FD0ADC /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		59B3800526384DD800FD0ADC /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,42 @@
 		59B37FE126373F2000FD0ADC /* Github Search */ = {
 			isa = PBXGroup;
 			children = (
+				59B3800126384BED00FD0ADC /* Controller */,
+				59B3800026384BE500FD0ADC /* View */,
+				59B37FFF26384BD200FD0ADC /* Model */,
 				59B37FE226373F2000FD0ADC /* AppDelegate.swift */,
 				59B37FE426373F2000FD0ADC /* SceneDelegate.swift */,
-				59B37FE626373F2000FD0ADC /* ViewController.swift */,
-				59B37FE826373F2000FD0ADC /* Main.storyboard */,
 				59B37FEE26373F2100FD0ADC /* Assets.xcassets */,
 				59B37FF026373F2100FD0ADC /* LaunchScreen.storyboard */,
 				59B37FF326373F2100FD0ADC /* Info.plist */,
 				59B37FEB26373F2000FD0ADC /* Github_Search.xcdatamodeld */,
-				59B37FFA2637404A00FD0ADC /* jssource.js */,
 			);
 			path = "Github Search";
+			sourceTree = "<group>";
+		};
+		59B37FFF26384BD200FD0ADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59B3800226384C1600FD0ADC /* Repo.swift */,
+				59B3800526384DD800FD0ADC /* NetworkManger.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		59B3800026384BE500FD0ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59B37FE826373F2000FD0ADC /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		59B3800126384BED00FD0ADC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59B37FE626373F2000FD0ADC /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +157,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B37FFB2637404A00FD0ADC /* jssource.js in Resources */,
 				59B37FF226373F2100FD0ADC /* LaunchScreen.storyboard in Resources */,
 				59B37FEF26373F2100FD0ADC /* Assets.xcassets in Resources */,
 				59B37FEA26373F2000FD0ADC /* Main.storyboard in Resources */,
@@ -144,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B3800626384DD800FD0ADC /* NetworkManger.swift in Sources */,
 				59B37FE726373F2000FD0ADC /* ViewController.swift in Sources */,
 				59B37FE326373F2000FD0ADC /* AppDelegate.swift in Sources */,
+				59B3800326384C1600FD0ADC /* Repo.swift in Sources */,
 				59B37FED26373F2000FD0ADC /* Github_Search.xcdatamodeld in Sources */,
 				59B37FE526373F2000FD0ADC /* SceneDelegate.swift in Sources */,
 			);
