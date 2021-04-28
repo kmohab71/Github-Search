@@ -61,12 +61,9 @@ extension ViewController: UITableViewDataSource{
 
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("preparing ")
        let destinationVC = segue.destination as! DescriptionViewController
-       print(tableView.indexPathForSelectedRow)
        if let indexPath = tableView.indexPathForSelectedRow{
            destinationVC.repo = self.networkManger.repos[indexPath.row]
-            print("repo is sent")
        }
    }
         
@@ -91,8 +88,6 @@ extension ViewController: UISearchBarDelegate{
 extension UIViewController: UITableViewDelegate {
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//      tableView.deselectRow(at: indexPath, animated: true)
-        print(indexPath.row)
         performSegue(withIdentifier: "ToDescription", sender: self)
   }
 

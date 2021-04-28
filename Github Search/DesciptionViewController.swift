@@ -21,7 +21,6 @@ class DescriptionViewController: UIViewController {
     func loadPage() {
         
         if let safeRepo = repo{
-            print(safeRepo)
             repoName.text = safeRepo.name
             owerName.text = safeRepo.owner.login
             repoDescription.text = safeRepo.description
