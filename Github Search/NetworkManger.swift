@@ -21,7 +21,6 @@ class NetworkManger : ObservableObject{
                             let results = try decoder.decode(Repo.self, from: safeData)
                             DispatchQueue.main.async {
                                 self.repos = results.items
-                                print(self.repos.count)
                                 onComplete()
                             }
                             

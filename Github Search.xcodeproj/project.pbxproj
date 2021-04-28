@@ -18,6 +18,7 @@
 		59B3800626384DD800FD0ADC /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3800526384DD800FD0ADC /* NetworkManger.swift */; };
 		59B380232638552800FD0ADC /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B380212638552800FD0ADC /* RepoCell.swift */; };
 		59B380242638552800FD0ADC /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B380222638552800FD0ADC /* RepoCell.xib */; };
+		59B380272638E9B900FD0ADC /* DesciptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B380262638E9B900FD0ADC /* DesciptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		59B3800526384DD800FD0ADC /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
 		59B380212638552800FD0ADC /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		59B380222638552800FD0ADC /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		59B380262638E9B900FD0ADC /* DesciptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesciptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				59B37FE626373F2000FD0ADC /* ViewController.swift */,
+				59B380262638E9B900FD0ADC /* DesciptionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				59B3800626384DD800FD0ADC /* NetworkManger.swift in Sources */,
 				59B380232638552800FD0ADC /* RepoCell.swift in Sources */,
+				59B380272638E9B900FD0ADC /* DesciptionViewController.swift in Sources */,
 				59B37FE726373F2000FD0ADC /* ViewController.swift in Sources */,
 				59B37FE326373F2000FD0ADC /* AppDelegate.swift in Sources */,
 				59B3800326384C1600FD0ADC /* Repo.swift in Sources */,

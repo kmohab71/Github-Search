@@ -11,12 +11,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var networkManger = NetworkManger()
     @IBOutlet weak var searchBar: UISearchBar!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "RepoCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         tableView.dataSource = self
-        
+        tableView.delegate = self
         self.tableView.rowHeight = 100.0
         
     }
@@ -29,6 +28,8 @@ class ViewController: UIViewController {
         }
         return nil
     }
+    
+    
 }
 
 
@@ -40,6 +41,7 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! RepoCell
+        
         cell.repoName.text = self.networkManger.repos[indexPath.row].name
         cell.ownerName.text = self.networkManger.repos[indexPath.row].owner.login
         cell.dateOfCreation.text = dateFormater(Date:self.networkManger.repos[indexPath.row].created_at)
@@ -54,10 +56,22 @@ extension ViewController: UITableViewDataSource{
               }
            }
         }
-        
         return cell
     }
-    
+
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("preparing ")
+       let destinationVC = segue.destination as! DescriptionViewController
+       print(tableView.indexPathForSelectedRow)
+       if let indexPath = tableView.indexPathForSelectedRow{
+           destinationVC.repo = self.networkManger.repos[indexPath.row]
+            print("repo is sent")
+       }
+   }
+        
+
+            
     
 }
 extension ViewController: UISearchBarDelegate{
@@ -69,8 +83,17 @@ extension ViewController: UISearchBarDelegate{
                         self.tableView.reloadData()
                     }
                 })
-                
             }
         }
     }
+}
+
+extension UIViewController: UITableViewDelegate {
+
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//      tableView.deselectRow(at: indexPath, animated: true)
+        print(indexPath.row)
+        performSegue(withIdentifier: "ToDescription", sender: self)
+  }
+
 }

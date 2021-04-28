@@ -32,10 +32,13 @@
                                 <rect key="frame" x="90" y="0.0" width="250" height="87"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ril-Eb-vZ9">
-                                        <rect key="frame" x="10" y="10" width="230" height="67"/>
+                                        <rect key="frame" x="10" y="10" width="91" height="67"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0o-PX-6rv" userLabel="repoName">
                                                 <rect key="frame" x="0.0" y="0.0" width="41.5" height="28.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -59,13 +62,20 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvn-vB-dOg">
+                                        <rect key="frame" x="212" y="32" width="23" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="arrow.right.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="descriptBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BBB-6b-VbW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Ril-Eb-vZ9" secondAttribute="bottom" constant="10" id="78h-aJ-7xW"/>
                                     <constraint firstItem="Ril-Eb-vZ9" firstAttribute="leading" secondItem="VcE-tR-G9e" secondAttribute="leading" constant="10" id="9yp-nX-uAm"/>
                                     <constraint firstItem="Ril-Eb-vZ9" firstAttribute="top" secondItem="VcE-tR-G9e" secondAttribute="top" constant="10" id="DOd-hE-TVH"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ril-Eb-vZ9" secondAttribute="trailing" constant="10" id="Mxb-Wl-T9q"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -78,6 +88,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" button="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <connections>
                 <outlet property="dateOfCreation" destination="Syc-bN-Eqg" id="k4P-r5-CRm"/>
                 <outlet property="ownerImage" destination="kF4-Sv-aEs" id="boF-r0-Lt0"/>
@@ -88,6 +102,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="arrow.right.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
