@@ -16,6 +16,7 @@ struct RepoData: Decodable, Identifiable{
     let description: String?
     let owner: Owner
     let created_at: String
+    let html_url:String
 }
 struct Owner: Decodable {
     let login : String

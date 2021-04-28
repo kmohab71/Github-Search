@@ -40,4 +40,12 @@ class DescriptionViewController: UIViewController {
         }
         
     }
+    @IBAction func openURL(_ sender: UIButton) {
+        if let safeURL = repo?.html_url{
+            if let url = URL(string: safeURL) {
+                UIApplication.shared.open(url)
+            }
+            
+        }
+    }
 }

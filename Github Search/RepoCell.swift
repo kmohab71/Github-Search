@@ -20,8 +20,5 @@ class RepoCell: UITableViewCell {
        
     }
     
-    @IBAction func descriptBtn(_ sender: UIButton) {
-        
-    }
     
 }
